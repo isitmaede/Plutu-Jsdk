@@ -6,7 +6,7 @@
   <p>
     <img src="https://img.shields.io/npm/v/plutu-jsdk?style=flat-square&color=blue" alt="npm version">
     <img src="https://img.shields.io/npm/l/plutu-jsdk?style=flat-square&color=green" alt="license">
-    <img src="https://img.shields.io/npm/dt/plutu-jsdk?style=flat-square" alt="downloads">
+    <img src="https://www.npmjs.com/package/plutu-jsdk" alt="downloads">
   </p>
 </div>
 
