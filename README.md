@@ -65,7 +65,7 @@ Adfali,plutu.adfali,Payment via Adfali service.
 Cards,plutu.cards,Local & International bank cards.
 T-Lync,plutu.tlync,Payment via T-Lync network.
 
-<div align="center">
-<sub>Built with ❤️ for the Libyan Developer Community.</sub>
-</div>
+
+Built with ❤️ for the Libyan Developer Community.
+
 
