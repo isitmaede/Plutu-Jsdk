@@ -59,11 +59,11 @@ if (response.success) {
 Secure your backend by verifying that incoming data is genuinely from Plutu.
 const isValid = plutu.verifySignature(receivedData, 'YOUR_SECRET_KEY');
 
-Service,Method,Description
-Sadad,plutu.sadad,OTP-based payment via Sadad.
-Adfali,plutu.adfali,Payment via Adfali service.
-Cards,plutu.cards,Local & International bank cards.
-T-Lync,plutu.tlync,Payment via T-Lync network.
+Service	Access Method	Key Functionality
+📱 Sadad	plutu.sadad	OTP-based transactions via Al-Madar (Sadad).
+💳 Adfali	plutu.adfali	Seamless integration with Adfali (Libyana) service.
+🌍 Cards	plutu.cards	Handles Local (LYD) & International (USD/MPGS) bank cards.
+🔗 T-Lync	plutu.tlync	Direct payment processing through the T-Lync network.
 
 
 Built with ❤️ for the Libyan Developer Community.
