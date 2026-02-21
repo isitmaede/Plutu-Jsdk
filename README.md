@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://plutu.ly/assets/images/logo.png" alt="Plutu Logo" width="200"/>
+  <img src="[https://plutu.ly/assets/images/logo.png](https://my.plutus.ly/img/logo-white.svg)" alt="Plutu Logo" width="200"/>
   <h1>Plutu JSDK</h1>
   <p><b>The Ultimate Node.js SDK for Plutu.ly Payment Gateway in Libya</b></p>
   
