@@ -1,0 +1,45 @@
+{
+  "name": "plutu-jsdk",
+  "version": "1.0.0",
+  "description": "The official-like simplified SDK for Plutu.ly payment gateway in Libya. Supports Sadad, Adfali, Cards, and T-Lync.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "plutu",
+    "libya",
+    "payment",
+    "sadad",
+    "adfali",
+    "tlync",
+    "sdk",
+    "gateway",
+    "ليبيا",
+    "سداد",
+    "أدفع_لي"
+  ],
+  "author": "Mohammed Ahmed Younes mohammedahmadyounes@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isitmaede/plutu-jsdk.git"
+  },
+  "dependencies": {
+    "axios": "^1.13.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
