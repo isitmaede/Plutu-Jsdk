@@ -14,29 +14,40 @@ export class BaseClient {
       },
     });
 
+    interface SuccessResponse<T = any> {
+      success: true;
+      status: number;
+      [key: string]: any;
+    }
+
+    interface ErrorResponse {
+      success: false;
+      status: number;
+      error: {
+      code: string;
+      message: string;
+      };
+    }
+
     this.api.interceptors.response.use(
       (response) => {
-        
-        return {
-          ...response,
-          data: {
-            success: true,
-            status: response.status,
-            ...response.data,
-          },
-        };
+      response.data = {
+        success: true,
+        status: response.status,
+        ...response.data,
+      };
+      return response;
       },
-      (error: AxiosError) => {
-        
-        const errorData: any = error.response?.data;
-        return Promise.reject({
-          success: false,
-          status: error.response?.status || 500,
-          error: {
-            code: errorData?.error?.code || 'UNKNOWN_ERROR',
-            message: errorData?.error?.message || error.message,
-          },
-        });
+      (error: AxiosError): Promise<ErrorResponse> => {
+      const errorData: any = error.response?.data;
+      return Promise.reject({
+        success: false,
+        status: error.response?.status || 500,
+        error: {
+        code: errorData?.error?.code || 'UNKNOWN_ERROR',
+        message: errorData?.error?.message || error.message,
+        },
+      });
       }
     );
   }
