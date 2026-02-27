@@ -61,12 +61,14 @@ if (response.success) {
 
 3. Verify Signature (Webhooks)
 Secure your backend by verifying that incoming data is genuinely from Plutu.
+```js
 const isValid = plutu.verifySignature(receivedData, 'YOUR_SECRET_KEY');
+```
 
 Service	Access Method	Key Functionality
-📱 Sadad	plutu.sadad	OTP-based transactions via Al-Madar (Sadad).
-💳 Adfali	plutu.adfali	Seamless integration with Adfali (Libyana) service.
-🌍 Cards	plutu.cards	Handles Local (LYD) & International (USD/MPGS) bank cards.
-🔗 T-Lync	plutu.tlync	Direct payment processing through the T-Lync network.
+- 📱 Sadad	`plutu.sadad`	OTP-based transactions via Al-Madar (Sadad).
+- 💳 Adfali	`plutu.adfali`	Seamless integration with Adfali (BCD) service.
+- 🌍 Cards	`plutu.cards`	Handles Local (LYD) & International (USD/MPGS) bank cards.
+- 🔗 T-Lync	`plutu.tlync`	Direct payment processing through the T-Lync network.
 
 Built with ❤️ for the Libyan Developer Community.
